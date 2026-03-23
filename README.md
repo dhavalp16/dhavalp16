@@ -2,14 +2,14 @@
 
 Final-year IT Engineering student (Mumbai University, '26), based in Mumbai.  
 Focused on C++ systems programming and engine architecture.  
-Computer graphics and game systems are where I want to build my career —
+Computer graphics and game systems are where I want to build my career -
 so that's where I spend my time outside of class.
 
 ---
 
 ## What I'm Building
 
-**Stardust** — Real-time 3D N-Body Physics Engine
+**Stardust** - Real-time 3D N-Body Physics Engine
 
 Built a real-time gravitational simulation in C++ using Raylib 5.5, where multiple
 bodies exert mutual gravitational pull, collide, and explode.  
@@ -23,24 +23,24 @@ wireframe explosion rendering.
 In reality, the planets in our solar system are too far apart to fit on any screen
 meaningfully. The fix was a deliberate design decision: compress orbital distances
 to keep all bodies visible simultaneously while preserving relative scale and
-gravitational behaviour. The goal was educational and game-like — plausible, not
+gravitational behaviour. The goal was educational and game-like - plausible, not
 physically exact.
 
 **2. Planet textures rendered completely black.**  
 Root cause: no lighting shader was loaded and no light source existed in the scene.
-Raylib's 3D renderer makes zero assumptions about lighting — without explicitly
+Raylib's 3D renderer makes zero assumptions about lighting - without explicitly
 loading a GLSL shader pair and calling CreateLight(), objects render with zero
 light contribution regardless of texture. Fixed by implementing a full
 Phong lighting pipeline (lighting.vs / lighting.fs) and placing a point
 light at the Sun's position.
 
-→ [Repository link](https://github.com/dhavalp16/Stardust.git)
+-> [Repository link](https://github.com/dhavalp16/Stardust.git)
 
 ---
 
 ## Active Learning
 
-**Low-Level C++ — The Cherno Series**  
+**Low-Level C++ - The Cherno Series**  
 Working through memory architecture, pointers, stack vs heap allocation.  
 Building comprehension from first principles.
 
@@ -64,10 +64,10 @@ Specialization in progress. Targeting engine-level work in UE5.
 
 ## Experience
 
-**Data Curation Intern — Greenox** *(6 months)*  
+**Data Curation Intern - Greenox** (6 months)  
 ML pipeline support and spatial dataset curation.
 
-**Incoming Analyst — Capgemini**
+**Incoming Analyst - Capgemini**
 
 ---
 
