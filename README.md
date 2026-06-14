@@ -1,9 +1,8 @@
 # Dhaval Panchal
 
-Final-year IT Engineering student (Mumbai University, '26), based in Mumbai.  
+IT Engineering Graduate (Mumbai University, '26), based in Mumbai.  
 Focused on C++ systems programming and engine architecture.  
-Computer graphics and game systems are where I want to build my career -
-so that's where I spend my time outside of class.
+Computer graphics and game systems are where I want to build my career, so that's where I spend my time.
 
 ---
 
@@ -11,28 +10,15 @@ so that's where I spend my time outside of class.
 
 **Stardust** - Real-time 3D N-Body Physics Engine
 
-Built a real-time gravitational simulation in C++ using Raylib 5.5, where multiple
-bodies exert mutual gravitational pull, collide, and explode.  
-Core systems: Euler integration, delta-time scaling, Tombstone Explosion Pool
-(object pooling), sphere-sphere collision detection, and additive-blend
-wireframe explosion rendering.
+A gravitational simulation in C++ using Raylib 5.5 where multiple bodies exert mutual gravitational pull, collide, and explode. Core systems: Euler integration with sub-stepping, delta-time scaling, object pooling for explosion effects, sphere-sphere collision detection, and additive-blend wireframe explosion rendering.
 
 **Problems I solved:**
 
-**1. Real planetary distances break the simulation visually.**  
-In reality, the planets in our solar system are too far apart to fit on any screen
-meaningfully. The fix was a deliberate design decision: compress orbital distances
-to keep all bodies visible simultaneously while preserving relative scale and
-gravitational behaviour. The goal was educational and game-like - plausible, not
-physically exact.
+**1. Real planetary distances don't work on screen.**  
+The actual solar system has planets too far apart to see simultaneously. I compressed orbital distances to keep everything visible while preserving relative scale and gravitational behavior. It's a deliberate design choice for an educational/game-like simulation - plausible, not physically exact.
 
-**2. Planet textures rendered completely black.**  
-Root cause: no lighting shader was loaded and no light source existed in the scene.
-Raylib's 3D renderer makes zero assumptions about lighting - without explicitly
-loading a GLSL shader pair and calling CreateLight(), objects render with zero
-light contribution regardless of texture. Fixed by implementing a full
-Phong lighting pipeline (lighting.vs / lighting.fs) and placing a point
-light at the Sun's position.
+**2. Planet textures rendered black.**  
+Root cause: no lighting shader loaded, no light source in the scene. Raylib's 3D renderer doesn't assume lighting - without explicitly loading GLSL shaders and creating a light, objects render with zero light contribution. Fixed by implementing a Phong lighting pipeline (lighting.vs / lighting.fs) and placing a point light at the Sun's position.
 
 -> [Repository link](https://github.com/dhavalp16/Stardust.git)
 
@@ -41,8 +27,7 @@ light at the Sun's position.
 ## Active Learning
 
 **Low-Level C++ - The Cherno Series**  
-Working through memory architecture, pointers, stack vs heap allocation.  
-Building comprehension from first principles.
+Working through memory architecture, pointers, stack vs heap allocation. Building comprehension from first principles.
 
 **Coursera: C++ Programming for Unreal Game Development**  
 Specialization in progress. Targeting engine-level work in UE5.
@@ -66,8 +51,6 @@ Specialization in progress. Targeting engine-level work in UE5.
 
 **Data Curation Intern - Greenox** (6 months)  
 ML pipeline support and spatial dataset curation.
-
-**Incoming Analyst - Capgemini**
 
 ---
 
